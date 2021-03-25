@@ -13,7 +13,7 @@ const handleError = (message, route, err, msgError) => {
 };
 
 
-// * Create New Todo
+// * Create New Note
 noteRouter.post('/new', (req, res) => {
     const note = new Note(req.body);
     note.save(err => {
@@ -24,22 +24,13 @@ noteRouter.post('/new', (req, res) => {
             res.status(200).json(
                 handleError('Successfully Saved Note', '/api/note/new', err, false)
             );
-            // req.user.save(err => {
-            //     if (err) res.status(500).json(
-            //         handleError('Error Updating User With New Todo', '/api/todo/new', err, true)
-            //     );
-            //     else res.status(200).json(
-            //         handleError('Successfully Saved Todo', '/api/todo/new', err, false)
-            //     );
-            // });
         }
     });
 });
 
-// ** Get All Todos
+// ** Get All Notes
 noteRouter.get('/all', (req, res) => {
     Note.find({}, (err, notes) => {
-        // console.log(notes);
         if (err) res.status(500).json(
             handleError('Error Has Occurred in Database Search', '/api/note/all', err, true)
         );
@@ -48,12 +39,6 @@ noteRouter.get('/all', (req, res) => {
             { notes }
         )
     });
-
-    //  // Sooo, .populate(arg) is used for arrays that contain primary keys. It will return all the data for each key...
-    //      // Simply provide the paramter to query
-    //  // .exec() : mongoose queries are executed when we provide a callback or use .then(), but these will not provide a true promise. .exec() will, and we can pass an optional callback to manage that promise.
-    //      //  In this case, we could be asking to populate several todos, so it's best to have a true promise so our data is complete
-    //      // https://stackoverflow.com/questions/31549857/mongoose-what-does-the-exec-function-do
 });
 
 module.exports = noteRouter;

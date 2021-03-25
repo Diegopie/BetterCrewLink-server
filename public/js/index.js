@@ -1,3 +1,4 @@
+// * Query Selector for Copy Buttons
 document.querySelector('#serverCopy').addEventListener('click', (e) => {
     e.preventDefault();
     if (navigator.clipboard.writeText) {

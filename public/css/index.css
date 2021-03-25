@@ -66,10 +66,13 @@ body {
     margin-top: 12px;
   }
 
+  /* iOS and Android pages have no spacing for reasons beyond me. The HTML is the exact same. Added this bottom spacing to help the issue */
   .spacer-bottom {
       margin-bottom: 50px;
   }
 
+
+  /*  Things kept breaking apart as the screen got longer so  I made a trillion media queries to control it. Images kept growing larger than their container and the return home button just floated in the center of the cards */
   @media only screen and (min-width: 576px) {
 	.step {
         max-height: 530px;
