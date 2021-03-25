@@ -58,12 +58,29 @@ body {
 	.step {
         max-height: 530px;
 		height: 530px;
+        transition: 350ms;
 	}
 
     .card {
         height: 530px;
+        transition: 350ms;
         /* justify-content: space-around; */
     }
 
+    @media only screen and (min-width: 1578px) {
+        main {
+            padding: 10px 280px;
+            transition: 350ms;
+        }
+    }
+
+    @media only screen and (min-width: 2000px) {
+        main {
+            padding: 10px 380px;
+            transition: 350ms;
+        }
+    }
+
+    
 
 }

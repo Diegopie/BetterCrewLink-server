@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="icon" href="https://github.com/ottomated/CrewLink/raw/master/logo.png" type="image/x-icon">
-    <title>PC Setup</title>
+    <title>Android Setup</title>
 </head>
 
 <body>
@@ -28,9 +28,11 @@
                 <div class="card bg-dark text-white p-0 rounded step-bottom">
                     <h3 class="step-title">Step One</h3>
                     <div class="row card-body">
-                        <p class="card-text">Visit OhMyGuus' GitHub page to download the BetterCrewlink installer. Click Download on Github.</p>
+                        <p class="card-text">Visit the <a href="https://play.google.com/store/apps/details?id=io.bettercrewlink.app" target="_blank" >Google Play Store</a> and install BetterCrewlink.
+                        <br>
+                        Voice chat will only work if a PC user is hosting the game with 'Mobile Host' checked in BetterCrewlink settings</p>
+                        <img src="../img/android-setup/step_one.png" class="card-img" alt="OhMyGuus' download page">
                     </div>
-                    <img src="../img/pc-settup/step_one.png" class="card-img" alt="OhMyGuus' download page">
                 </div>
             </article>
             <!-- Step Two -->
@@ -38,23 +40,22 @@
                 <div class="card bg-dark text-white p-0 rounded step-bottom">
                     <h3 class="step-title">Step Two</h3>
                     <div class="row card-body">
-                        <p class="card-text">Install and launch BetterCrewlink. Click on settings.</p>
+                        <p class="card-text">Select option Voice Server and set to Custom server. Replace the default server with <span id=serverName></span></p>
                     </div>
-                    <img src="../img/pc-settup/step_two.png" class="card-img" alt="BetterCrewlink Startup">
+                    <img src="../img/android-setup/step_two.png" class="card-img" alt="BetterCrewlink server change">
+
+                    <a class="button" id="serverCopy">Copy Server URL</a>
                 </div>
             </article>
-            <!-- Step Three -->
+            <!-- Step Four -->
             <article class="col-12 col-sm-6 col-md-4 col-xl-3 spacer step">
                 <div class="card bg-dark text-white p-0 rounded step-bottom">
-                    <h3 class="step-title">Step Three</h3>
+                    <h3 class="step-title">Step Four</h3>
                     <div class="row card-body">
-                        <p class="card-text">Scroll down the settings to find the Advanced section. Select 'Change Voice Server' and replace the default server with <span id=serverName></span></p>
-                    </div>
-
-                    <img src="../img/pc-settup/step_three.png" class="card-img" alt="BetterCrewlink server change">
-                    <a class="button" id="serverCopy">Copy Server URL</a>
-                    <div class="row card-body">
-                        <p class="card-text">Additionally, if you are hosting the game you must ensure 'Mobile Host' is checked under BETA/DEBUG</p>
+                        <p class="card-text">Set your Ingame name to match your Among Us name exactly, each name must be unique. 
+                        <br>
+                        Enter the Among Us lobby code and select your mic. The first option should do it.</p>
+                        <img src="../img/android-setup/step_three.png" class="card-img" alt="Name and lobby settings">
                     </div>
                 </div>
             </article>
@@ -63,9 +64,10 @@
                 <div class="card bg-dark text-white p-0 rounded step-bottom">
                     <h3 class="step-title">Step Four</h3>
                     <div class="row card-body">
-                        <p class="card-text">Now toggle your preferred game settings and proceed to breaking friendships 😊</p>
+                        <p class="card-text">Press Connect then launch and join your Among Us lobby. You may need to switch back to BetterCrewLink to refresh your connection if you have voices issues.</p>
+                        <p>You may need to disconnect if you are kicked out the game. The lobby code MUST be updated any time a new lobby is created.</p>
+                        <img src="../img/android-setup/step_four.png" class="card-img" alt="Name and lobby settings">
                     </div>
-                    <img src="../img/pc-settup/step_four.png" class="card-img" alt="just love killin">
                 </div>
             </article>
         </section>
