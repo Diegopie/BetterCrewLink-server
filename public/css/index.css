@@ -20,6 +20,10 @@ body {
     margin: 4px 2px;
   }
 
+  .button:hover {
+    color: #1BEF0C !important;
+  }
+
   .contain {
     /* width: 100%; */
     margin-top: 16px;
