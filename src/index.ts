@@ -11,6 +11,10 @@ import peerConfig from './peerConfig';
 import { ICEServer } from './ICEServer';
 let TurnServer = require('node-turn');
 
+// * Import DB and routes
+require('../server/config/db')();
+const routes = require('../server/routes')
+
 const httpsEnabled = !!process.env.HTTPS;
 
 const port = process.env.PORT || (httpsEnabled ? '443' : '9736');
@@ -84,6 +88,10 @@ interface ClientPeerConfig {
 app.set('view engine', 'pug');
 app.use(morgan('combined'));
 app.use('/public', express.static('public'))
+
+// * Parse JSON and Use Our Routes
+app.use(express.json());
+app.use(routes);
 
 let connectionCount = 0;
 let hostname = process.env.HOSTNAME;
