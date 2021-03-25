@@ -13,6 +13,10 @@ body {
     color: #1BEF0C !important;
   }
 
+  img {
+      max-height: 80hv;
+  }
+
   .button {
     background-color: #2b2b2b;
     border: solid;
@@ -88,6 +92,42 @@ body {
             transition: 350ms;
         }
     }
+
+    @media only screen and (min-width: 2400px) {
+        main {
+            padding: 10px 480px;
+            transition: 350ms;
+        }
+    }
+
+    @media only screen and (min-width: 2500px) {
+        main {
+            padding: 10px 580px;
+            transition: 350ms;
+        }
+    }
+
+    @media only screen and (min-width: 2600px) {
+        main {
+            padding: 10px 700px;
+            transition: 350ms;
+        }
+    }
+
+    @media only screen and (min-width: 2915px) {
+        main {
+            padding: 10px 900px;
+            transition: 350ms;
+        }
+    }
+
+    @media only screen and (min-width: 3333px) {
+        main {
+            padding: 10px 1010px;
+            transition: 350ms;
+        }
+    }
+    
 
     
 

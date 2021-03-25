@@ -52,3 +52,62 @@
 	animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
+@media only screen and (min-width: 925px) {
+	#background {
+		animation-duration: 300s;
+	}
+
+	#midground {
+		animation-duration: 150s;
+	}
+
+	#foreground {
+		animation-duration: 75s;
+	}
+}
+
+
+@media only screen and (min-width: 1200px) {
+	#background {
+		animation-duration: 400s;
+	}
+
+	#midground {
+		animation-duration: 200s;
+	}
+
+	#foreground {
+		animation-duration: 100s;
+	}
+}
+
+
+@media only screen and (min-width: 1600px) {
+	#background {
+		animation-duration: 800s;
+	}
+
+	#midground {
+		animation-duration: 400s;
+	}
+
+	#foreground {
+		animation-duration: 200s;
+	}
+}
+
+@media only screen and (min-width: 2800px) {
+	#background {
+		animation-duration: 3200s;
+	}
+
+	#midground {
+		animation-duration: 1600s;
+	}
+
+	#foreground {
+		animation-duration: 800s;
+	}
+}
+
