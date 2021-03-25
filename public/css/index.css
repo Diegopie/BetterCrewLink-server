@@ -66,6 +66,10 @@ body {
     margin-top: 12px;
   }
 
+  .spacer-bottom {
+      margin-bottom: 50px;
+  }
+
   @media only screen and (min-width: 576px) {
 	.step {
         max-height: 530px;

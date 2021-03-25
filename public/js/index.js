@@ -1,9 +1,10 @@
 document.querySelector('#serverCopy').addEventListener('click', (e) => {
     if (navigator.clipboard.writeText) {
+        const path = $('#serverCopy')[0].children[0];
         let copyText = window.location.origin;
         navigator.clipboard.writeText(copyText);
-        $('#serverCopy').text("Copied!")
+        $(path).text("Copied!")
     } else {
-        $('#serverCopy').text("Your browser does not support this feature :/")
+        $(path).text("Your browser does not support this feature :/")
     }
 });
