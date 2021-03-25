@@ -9,6 +9,10 @@ body {
       padding: 10px 20px;
   }
 
+  a:hover {
+    color: #1BEF0C !important;
+  }
+
   .button {
     background-color: #2b2b2b;
     border: solid;

@@ -1,12 +1,6 @@
-
-
-$("#serverName").text(window.location.origin);
-
-
-
 document.querySelector('#serverCopy').addEventListener('click', (e) => {
     if (navigator.clipboard.writeText) {
-        let copyText = document.querySelector('span').innerText;
+        let copyText = window.location.origin;
         navigator.clipboard.writeText(copyText);
         $('#serverCopy').text("Copied!")
     } else {

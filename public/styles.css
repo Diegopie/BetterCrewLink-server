@@ -3,6 +3,11 @@ html {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #1b2735 100%);
     overflow: hidden;
   }
+
+  a:hover {
+    color: #1BEF0C !important;
+  }
+  
   #crewinfo{
               background-color: #23272ac7;
   width: 100%;
