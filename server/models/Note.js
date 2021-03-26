@@ -8,6 +8,10 @@ const NoteSchema = new mongoose.Schema({
     signature: {
         type: String,
         required: true
+    },
+    style: {
+        type: Array,
+        required: true,
     }
 });
 
