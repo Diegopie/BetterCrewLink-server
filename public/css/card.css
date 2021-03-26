@@ -10,7 +10,7 @@ a {
 }
 
 #card-contain {
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 .note-card {
@@ -64,6 +64,23 @@ a {
       align-items: center;
   }
 
+.makeCard-nav{ 
+    justify-content: space-evenly;
+}
+
+#makeCard-contain {
+    justify-content: space-evenly;
+}
+
+.makeCard-submit { 
+    justify-content: center;
+}
+
+.makeCard-home { 
+    margin-top: 40px;
+    justify-content: center;
+}
+
 .note {
     width: 100%;
 }
@@ -74,7 +91,8 @@ a {
 
 .note-settings {
     background-color: rgba(43, 43, 43, 0.9);
-    padding: 10px 4px 20px 38px;
+    padding: 10px 38px 20px 38px;
+    text-align: center;
 }
 
 .note-msg {
@@ -89,7 +107,31 @@ a {
 }
 
 
+/* Fix Make Cards on Big Screens */
+@media only screen and (min-width: 1000px) {
+    .note-settings {
+        max-width: 380px !important;
+        min-height: 380px;
+        transition: 350ms;
+    }
 
+    #change {
+        max-width: 380px !important;
+        min-height: 380px;
+        transition: 350ms;
+    }
+}
+
+
+/* Fix Cards on Small Screens */
+@media only screen and (max-width: 320px) {
+    .note-card  {
+        min-width: 260px;
+    }
+}
+
+
+/* For Responsive Large Screens */
 @media only screen and (min-width: 1900px) {
     body {
         padding-left: 200px;

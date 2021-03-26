@@ -8,8 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/animate.css">
     <link rel="icon" href="https://github.com/ottomated/CrewLink/raw/master/logo.png" type="image/x-icon">
     <title>Anne's B-Day Card!</title>
 </head>
@@ -19,11 +19,11 @@
     <div id="background"></div>
     <div id="midground"></div>
     <div id="foreground"></div>
-    <section class="row">
-        <h1 class="col-8"> Happy Birthday, Anne! </h1>
-        <a class="col-3 button" href="./card.html"> Click To View Cards!</a>
-    </section>
     <main>
+        <section class="row makeCard-nav">
+            <h1 class="col-sm-12 col-md-8"><a href="/">Happy Birthday, Anne! </a></h1>
+            <a class="col-sm-10 col-md-3 button" href="./card.html"> Click To View Cards!</a>
+        </section>
         <section class='row' id='makeCard-contain'>
             <article class="col-4 note-card note-gambit" id="change">
                 <textarea class="note"></textarea>
@@ -31,17 +31,22 @@
                 <img class="img" src="../img/card/gambitMotes-01.png">
             </article>
             <article class="col-4 note-card note-settings">
-                <h2>Choose a Theme!</h2>
-                <button class="button" id="mine" href=""> Minecraft </button>
-                <button class="button" id="gambo" href=""> Gambit </button>
-                <button class="button" id="empire" href=""> Age of Empires </button>
+                <div>
+                    <h2>Choose a Theme!</h2>
+                    <button class="button" id="mine" href=""> Minecraft </button>
+                    <button class="button" id="gambo" href=""> Gambit </button>
+                    <button class="button" id="empire" href=""> Age of Empires </button>
+                </div>
             </article>
         </section>
-        <section class="row">
+        <section class="row makeCard-submit">
             <button class="button" id="submit" href=""> Send Card! </button>
             <article class="note-msg poof">
                 <p class="col">Your Note Cannot Be Empty!</p>
             </article>
+        </section>
+        <section class="row makeCard-home">
+            <button class="button" href="/"> Return Home </button>
         </section>
     </main>
 

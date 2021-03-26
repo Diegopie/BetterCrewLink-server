@@ -17,7 +17,7 @@ $.ajax({
         noteData.forEach(note => {
             const newNote = `
                 <article 
-                    class="col-12 col-md-6 col-lg-2 note-card ${note.style[0]}" data-id="${note._id}"
+                    class="col-8 col-md-4 col-lg-2 note-card ${note.style[0]}" data-id="${note._id}"
                 >
                     <h2 class="note">${note.note}</h2>
                     <h4 class="signature">- ${note.signature}</h4>

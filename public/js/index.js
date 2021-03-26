@@ -1,8 +1,12 @@
 // * Query Selector for Copy Buttons
 document.querySelector('#serverCopy').addEventListener('click', (e) => {
     e.preventDefault();
+    console.log("cunt");
+    console.log(navigator.clipboard.writeText);
     if (navigator.clipboard.writeText) {
-        const path = $('#serverCopy')[0].children[0];
+
+        const path = document.querySelector('#serverCopy').children[0];
+        console.dir(path);
         let copyText = window.location.origin;
         navigator.clipboard.writeText(copyText);
         $(path).text("Copied!")
@@ -10,3 +14,6 @@ document.querySelector('#serverCopy').addEventListener('click', (e) => {
         $(path).text("Your browser does not support this feature :/")
     }
 });
+
+
+$('')
