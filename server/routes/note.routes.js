@@ -7,7 +7,8 @@ const handleError = (message, route, err, msgError) => {
     return {
         message: {
             msgBody: message,
-            msgError: msgError
+            msgError: msgError,
+            error: err
         }
     };
 };
