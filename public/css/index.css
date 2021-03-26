@@ -85,7 +85,8 @@ body {
         transition: 350ms;
         /* justify-content: space-around; */
     }
-
+    
+    /* Why, just why did I nest this inside a media query 😂  */
     @media only screen and (min-width: 1578px) {
         main {
             padding: 10px 280px;
@@ -134,8 +135,5 @@ body {
             transition: 350ms;
         }
     }
-    
-
-    
 
 }

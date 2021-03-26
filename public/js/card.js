@@ -13,9 +13,8 @@ $.ajax({
         console.log(error);
         console.log(error.responseJSON.notes);
         const noteData = error.responseJSON.notes
-
+        // Render Each Note
         noteData.forEach(note => {
-            console.log(note);
             const newNote = `
                 <article 
                     class="col-12 col-md-6 col-lg-2 note-card ${note.style[0]}" data-id="${note._id}"

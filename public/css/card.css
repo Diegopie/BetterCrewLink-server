@@ -87,3 +87,33 @@ a {
 .poof {
     display: none;
 }
+
+
+
+@media only screen and (min-width: 1900px) {
+    body {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media only screen and (min-width: 2260px) {
+    body {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+}
+
+@media only screen and (min-width: 2660px) {
+    body {
+        padding-left: 650px;
+        padding-right: 650px;
+    }
+}
+
+@media only screen and (min-width: 3160px) {
+    body {
+        padding-left: 800px;
+        padding-right: 800px;
+    }
+}

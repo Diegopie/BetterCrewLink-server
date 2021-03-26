@@ -1,7 +1,10 @@
+// * Stores Current Class Being Rendered to Correctly Target and Replace Styles
 let currentClass = "note-gambit"
-const imgPath = "../img/card/"
+// * Default Styling to Send to DB, Listeners Will Update this Value
 let dbStyle = ["note-gambit", "gambitMotes-01.png"]
+const imgPath = "../img/card/"
 
+// * Minecraft: Remove Current Styling and Apply Minecraft Class and Image
 $('#mine').click((e) => {
     e.preventDefault()
     // Change Color
@@ -13,6 +16,7 @@ $('#mine').click((e) => {
     dbStyle = ["note-mine", "mineGrass-01.png"]
 });
 
+// * Gambit: Remove Current Styling and Apply Gambit Class and Image
 $('#gambo').click((e) => {
     e.preventDefault()
     // Change Color
@@ -24,6 +28,7 @@ $('#gambo').click((e) => {
     dbStyle = ["note-gambit", "gambitMotes-01.png"]
 });
 
+// * Age of Empire: Remove Current Styling and Apply Age of Empire Class and Image
 $('#empire').click((e) => {
     e.preventDefault()
     // Change Color
@@ -35,6 +40,7 @@ $('#empire').click((e) => {
     dbStyle = ["note-age", "ageEmpire-01.png"]
 });
 
+// * Validate textareas; Make POST Req; Handle Success and Fail
 $('#submit').click(async e => {
     e.preventDefault();
     $('.note-msg').addClass('poof');
@@ -73,9 +79,5 @@ $('#submit').click(async e => {
             $('.note-msg').append(redirect);
 
         }
-       
-        
-
     }
-
 })
