@@ -90,6 +90,7 @@ app.use(morgan('combined'));
 app.use('/public', express.static('public'))
 
 // * Parse JSON and Use Our Routes
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(routes);
 
