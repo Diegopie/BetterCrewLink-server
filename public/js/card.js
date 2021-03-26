@@ -20,14 +20,14 @@ $.ajax({
                 <article 
                     class="col-12 col-md-6 col-lg-2 note-card ${note.style[0]}" data-id="${note._id}"
                 >
-                    <h2>${note.note}</h2>
-                    <h4>- ${note.signature}</h4>
+                    <h2 class="note">${note.note}</h2>
+                    <h4 class="signature">- ${note.signature}</h4>
                     <img 
                         class="img" src="../img/card/${note.style[1]}"
                     >
                 </article>
             `
-            $('#card-contain').append(newNote)
+            $('#card-contain').prepend(newNote)
         });
     }
 })
