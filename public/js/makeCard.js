@@ -40,6 +40,18 @@ $('#empire').click((e) => {
     dbStyle = ["note-age", "ageEmpire-01.png"]
 });
 
+// * Age of Empire: Remove Current Styling and Apply Age of Empire Class and Image
+$('#border').click((e) => {
+    e.preventDefault()
+    // Change Color
+    $('#change').removeClass(currentClass);
+    $('#change').addClass("note-border");
+    currentClass = "note-border"; 
+    // Change Image
+    $('.img').attr('src', imgPath + 'borderlands-01.png')
+    dbStyle = ["note-border", "borderlands-01.png"]
+});
+
 // * Validate textareas; Make POST Req; Handle Success and Fail
 $('#submit').click(async e => {
     e.preventDefault();

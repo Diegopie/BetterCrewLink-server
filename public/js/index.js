@@ -1,7 +1,6 @@
 // * Query Selector for Copy Buttons
 document.querySelector('#serverCopy').addEventListener('click', (e) => {
     e.preventDefault();
-    console.log("cunt");
     console.log(navigator.clipboard.writeText);
     if (navigator.clipboard.writeText) {
 
@@ -16,4 +15,4 @@ document.querySelector('#serverCopy').addEventListener('click', (e) => {
 });
 
 
-$('')
+$('.copy').text(window.location.origin);
