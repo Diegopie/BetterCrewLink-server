@@ -19,6 +19,7 @@ a {
     margin: 25px 10px;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 8px;
 }
 
 
