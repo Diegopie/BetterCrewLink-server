@@ -19,7 +19,7 @@ $.ajax({
                 <article 
                     class="col-8 col-md-4 col-lg-2 note-card ${note.style[0]}" data-id="${note._id}"
                 >
-                    <h2 class="note">${note.note}</h2>
+                    <h2 class="note">${note.note.substring(0, 181)}</h2>
                     <h4 class="signature">- ${note.signature}</h4>
                     <img 
                         class="img" src="../img/card/${note.style[1]}"
@@ -30,3 +30,6 @@ $.ajax({
         });
     }
 })
+
+
+mapData.roomName.substring(0, 22)
