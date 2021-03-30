@@ -1,5 +1,5 @@
 const siteURL = window.location.origin;
-
+let currentClass = "note-border"
 
 // I keep getting bad request response but the data comes threw in the error???
 $.ajax({
@@ -28,15 +28,26 @@ $.ajax({
             `
             $('#card-contain').prepend(newNote)
         });
-        // tyruing to get modal to work
-        // $(".img").click((event) => {
-        //     event.preventDefault();
-
-        //     console.log('pig fuck');
-        //     $("#validateModal").modal();
+        // trying to get modal to work
+        $(".img").click((e) => {
+            e.preventDefault();
+            console.dir(e.target.parentElement.dataset.id);
 
 
-        // });
+
+
+
+            // I thought this wouldn't work but I can just store the full text in an html attribute then use that for the modal
+
+            // // console.dir(e.target.attributes[1].value);
+            // const img = e.target.attributes[1].value;
+            // const style = e.target.parentElement.classList[4];
+
+            // $('#change').removeClass(currentClass);
+            // $('#change').addClass(style);
+            // $('.img-target').attr('src', img);
+            // $("#validateModal").modal();
+        });
     }
 })
 

@@ -6,7 +6,7 @@ const imgPath = "../img/card/"
 
 // * Minecraft: Remove Current Styling and Apply Minecraft Class and Image
 $('#mine').click((e) => {
-    e.preventDefault()
+    e.preventDefault();
     // Change Color
     $('#change').removeClass(currentClass);
     $('#change').addClass("note-mine");
@@ -18,7 +18,7 @@ $('#mine').click((e) => {
 
 // * Gambit: Remove Current Styling and Apply Gambit Class and Image
 $('#gambo').click((e) => {
-    e.preventDefault()
+    e.preventDefault();
     // Change Color
     $('#change').removeClass(currentClass);
     $('#change').addClass("note-gambit");
@@ -30,7 +30,7 @@ $('#gambo').click((e) => {
 
 // * Age of Empire: Remove Current Styling and Apply Age of Empire Class and Image
 $('#empire').click((e) => {
-    e.preventDefault()
+    e.preventDefault();
     // Change Color
     $('#change').removeClass(currentClass);
     $('#change').addClass("note-age");
@@ -42,14 +42,14 @@ $('#empire').click((e) => {
 
 // * Age of Empire: Remove Current Styling and Apply Age of Empire Class and Image
 $('#border').click((e) => {
-    e.preventDefault()
+    e.preventDefault();
     // Change Color
     $('#change').removeClass(currentClass);
     $('#change').addClass("note-border");
     currentClass = "note-border"; 
     // Change Image
-    $('.img').attr('src', imgPath + 'borderlands-01.png')
-    dbStyle = ["note-border", "borderlands-01.png"]
+    $('.img').attr('src', imgPath + 'borderlands-01.png');
+    dbStyle = ["note-border", "borderlands-01.png"];
 });
 
 // * Validate textareas; Make POST Req; Handle Success and Fail
